@@ -1,0 +1,28 @@
+name: Sync to etiketka.test
+
+on:
+  push:
+    branches:
+      - main  # или нужная ветка
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+
+      - name: Clone target repo (etiketka.test)
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          git clone https://x-access-token:${{ secrets.TARGET_REPO_TOKEN }}@github.com/etiketkasales/etiketka.test.git target
+
+          rsync -av --exclude=target --exclude=.git ./ ./target/
+
+          cd target
+          git add .
+          git commit -m "Sync from etiketkasales_frontend on $(date)" || echo "Nothing to commit"
+          git push origin main  # или другая ветка, если нужно
