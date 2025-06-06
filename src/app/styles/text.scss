@@ -1,7 +1,7 @@
 @use "app/styles/colors.scss" as *;
 $font-family: "Nunito Sans";
 $second-family: "Open Sans";
-$third-family: "Inter";
+$third-family: "Inter", sans-serif;
 
 .second-family {
     font-family: $second-family;
