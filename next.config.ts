@@ -16,7 +16,6 @@ const nextConfig: NextConfig = {
     prependData: `
       @use "app/styles/colors.scss" as *;
       @use "app/styles/sizes.scss" as *;
-      @use "app/styles/vars.scss" as *;
       @use "app/styles/text.scss" as *;
     `,
   },

@@ -1,16 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import "./styles/global.scss";
+import "./styles/reset.scss";
 import "./styles/fonts.scss";
+import "./styles/global.scss";
+import "./styles/samples.scss";
 
 export const metadata: Metadata = {
   title: "Этикетка",
   description: "Маркетплей самых разных товаров",
+  icons: ["/logo.png"],
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1.5,
+  maximumScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -20,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={``}>{children}</body>
+      <body className={`flex-column space-between gap-5 page-wrapper`}>
+        {children}
+      </body>
     </html>
   );
 }

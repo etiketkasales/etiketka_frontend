@@ -1,13 +1,7 @@
-$font-family: "Nunito Sans",
-sans-serif;
-$second-family: "Open Sans",
-sans-serif;
-$third-family: "Inter",
-sans-serif;
-
-.first-family {
-    font-family: $font-family;
-}
+@use "app/styles/colors.scss" as *;
+$font-family: "Nunito Sans";
+$second-family: "Open Sans";
+$third-family: "Inter";
 
 .second-family {
     font-family: $second-family;
@@ -15,4 +9,36 @@ sans-serif;
 
 .third-family {
     font-family: $third-family;
+}
+
+//size
+.text-16 {
+    font-size: 16px;
+}
+
+//weight
+.bold {
+    font-weight: 700;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+//color
+.white {
+    color: $white;
+}
+
+.gray {
+    color: $gray;
+}
+
+.footer-gray {
+    color: $footer-gray;
+}
+
+//
+.uppercase {
+    text-transform: uppercase;
 }
