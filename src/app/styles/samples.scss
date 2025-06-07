@@ -11,26 +11,54 @@
     background-color: $white;
 }
 
-//
-.padding-32-24 {
-    padding: $space-8 $space-6;
+.green-container {
+    background-color: $green;
+}
+
+.bg-gray-container {
+    background-color: $bg-gray;
 }
 
 //
+.radius-8 {
+    border-radius: $space-2;
+}
+
 .radius-20 {
     border-radius: $radius-20;
 }
 
-.padding-16 {
-    padding: $space-4;
+.radius-12 {
+    border-radius: $space-3;
+}
+
+//
+.padding-2-4 {
+    padding: $space-0 $space-1;
+}
+
+.padding-8 {
+    padding: $space-3;
+}
+
+.padding-10 {
+    padding: $space-10px;
 }
 
 .padding-10-16 {
     padding: $space-10px $space-4;
 }
 
-.padding-8 {
-    padding: $space-3;
+.padding-16 {
+    padding: $space-4;
+}
+
+.padding-24 {
+    padding: $space-6;
+}
+
+.padding-32-24 {
+    padding: $space-8 $space-6;
 }
 
 //

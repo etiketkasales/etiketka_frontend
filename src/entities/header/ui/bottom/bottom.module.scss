@@ -1,0 +1,31 @@
+.container {
+    border-radius: 0 0 $radius-20 $radius-20;
+    align-content: start;
+}
+
+.logo {
+    min-width: 242px;
+    height: 46px;
+}
+
+@media screen and (width <= 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .button {
+        grid-column: 4 span;
+        justify-content: start;
+    }
+
+    .search {
+        grid-column: 8 span;
+        max-width: unset !important;
+    }
+
+    .nav {
+        grid-column: 12 span;
+        justify-content: end;
+    }
+}

@@ -3,3 +3,9 @@ export interface HeaderTopItemI {
   link: string;
   action?: () => void;
 }
+
+export interface HeaderBottomFeatureI {
+  Icon: React.FC<React.SVGProps<SVGSVGElement>>;
+  value: number;
+  onClick: () => void;
+}

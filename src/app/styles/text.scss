@@ -13,6 +13,8 @@ $third-family: "Inter";
 
 .nowrap-text {
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 //size
@@ -44,6 +46,10 @@ $third-family: "Inter";
 
 .gray {
     color: $gray;
+}
+
+.gray-2 {
+    color: $gray-2;
 }
 
 .black {

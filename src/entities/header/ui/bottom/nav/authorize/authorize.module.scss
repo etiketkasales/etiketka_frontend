@@ -1,0 +1,10 @@
+.container {
+    &:hover {
+        svg path {
+            fill: $black;
+        }
+        span {
+            color: $black;
+        }
+    }
+}

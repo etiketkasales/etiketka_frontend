@@ -16,6 +16,32 @@
     color: inherit;
 }
 
+.blue {
+    border-radius: $space-2;
+    background-color: $blue;
+
+    &:hover {
+        background-color: $light-blue;
+    }
+
+    &:active {
+        background-color: $dark-blue;
+    }
+}
+
+.green {
+    border-radius: $space-2;
+    background-color: $green;
+}
+
 .size-0 {
     padding: 0;
+}
+
+.size-4-12 {
+    padding: $space-1 $space-3;
+}
+
+.size-2-4 {
+    padding: $space-0 $space-1;
 }

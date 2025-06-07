@@ -2,8 +2,8 @@ import React from "react";
 
 import classes from "./button.module.scss";
 
-export type ButtonTypeT = "ghost" | "yellow" | "white";
-export type ButtonSizeT = "0";
+export type ButtonTypeT = "ghost" | "yellow" | "white" | "blue" | "green";
+export type ButtonSizeT = "0" | "4-12" | "2-4";
 
 interface Props extends React.HTMLAttributes<HTMLButtonElement> {
   type: ButtonTypeT;
