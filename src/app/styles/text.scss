@@ -11,9 +11,17 @@ $third-family: "Inter";
     font-family: $third-family;
 }
 
+.nowrap-text {
+    white-space: nowrap;
+}
+
 //size
 .text-16 {
     font-size: clamp(0.875rem, 0.824rem + 0.23vw, 1rem);
+}
+
+.text-14 {
+    font-size: 14px;
 }
 
 //weight
@@ -38,8 +46,8 @@ $third-family: "Inter";
     color: $gray;
 }
 
-.footer-gray {
-    color: $footer-gray;
+.black {
+    color: $black;
 }
 
 //

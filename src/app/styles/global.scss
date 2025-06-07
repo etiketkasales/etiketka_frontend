@@ -8,6 +8,14 @@
     padding: 0 $container-offset;
 }
 
+.relative {
+    position: relative;
+}
+
+.max-content {
+    width: max-content;
+}
+
 //grid
 .grid {
     display: grid;
@@ -114,6 +122,10 @@
 
 .gap-5 {
     gap: $space-5;
+}
+
+.gap-8 {
+    gap: $space-8;
 }
 
 .gap-50 {
