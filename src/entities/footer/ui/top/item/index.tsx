@@ -22,8 +22,9 @@ export default function FooterTopItem({ title, links }: Props) {
                 onClick={() => {
                   if (item.link) push(item.link);
                 }}
+                className={classes.button}
               >
-                <span className="text-16 regular footer-gray second-family">
+                <span className="text-16 regular white opacity-08 second-family text-left">
                   {item.title}
                 </span>
               </Button>
